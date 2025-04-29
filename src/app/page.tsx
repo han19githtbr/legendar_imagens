@@ -199,7 +199,7 @@ export default function LegendarFoto() {
   const imageRef = useRef<HTMLImageElement>(null);
   const [captionMaxWidth, setCaptionMaxWidth] = useState<string>('90%'); // Estado para controlar a largura máxima da legenda
   const [hoveredEmoji, setHoveredEmoji] = useState<string | null>(null);
-  const [resizedImageUrl, setResizedImageUrl] = useState<string | null>(null);
+  //const [resizedImageUrl, setResizedImageUrl] = useState<string | null>(null);
 
   useEffect(() => {
     if (imageRef.current) {
