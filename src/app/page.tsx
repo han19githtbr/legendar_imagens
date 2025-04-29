@@ -265,7 +265,7 @@ export default function LegendarFoto() {
       ctx?.drawImage(img, 0, 0, width, height);
 
       const resizedDataURL = canvas.toDataURL('image/jpeg', 0.8);
-      setResizedImageUrlForDownload(resizedDataURL); // Novo estado para a URL redimensionada para download
+      //setResizedImageUrlForDownload(resizedDataURL); // Novo estado para a URL redimensionada para download
 
       // Oferecer a opção de baixar a imagem redimensionada
       const a = document.createElement('a');
@@ -274,12 +274,12 @@ export default function LegendarFoto() {
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-      setResizedImageUrlForDownload(null); // Limpar o estado após o download
+      //setResizedImageUrlForDownload(null); // Limpar o estado após o download
     };
     img.src = imageDataURL;
   };
 
-  const [resizedImageUrlForDownload, setResizedImageUrlForDownload] = useState<string | null>(null);
+  //const [resizedImageUrlForDownload, setResizedImageUrlForDownload] = useState<string | null>(null);
 
   const handleDownload = async () => {
     if (!fotoUrl) {
