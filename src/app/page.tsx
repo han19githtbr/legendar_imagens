@@ -194,7 +194,7 @@ const styles: Styles = {
 export default function LegendarFoto() {
   const [fotoUrl, setFotoUrl] = useState<string | null>(null);
   const [legenda, setLegenda] = useState<string>('');
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  //const canvasRef = useRef<HTMLCanvasElement>(null);
   const imageWithCaptionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const [captionMaxWidth, setCaptionMaxWidth] = useState<string>('90%'); // Estado para controlar a largura máxima da legenda
